@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Niraj Kumar Pandit | Portfolio</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  </head>
+
+  <body class="bg-[#030712] text-white overflow-x-hidden">
+    <!--================ NAVBAR ================-->
+
+    <header
+      class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl border-b border-white/10"
+    >
+      <nav
+        class="max-w-7xl mx-auto flex justify-between items-center py-5 px-6"
+      >
+        <h2 class="text-2xl font-bold tracking-wider">
+          Niraj<span class="text-cyan-400">.</span>
+        </h2>
+
+        <ul class="hidden md:flex gap-10 text-sm font-medium">
+          <li><a href="#home" class="nav-link">Home</a></li>
+
+          <li><a href="#about" class="nav-link">About</a></li>
+
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button id="menu-btn" class="md:hidden text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!--================ MOBILE MENU ================-->
+
+    <div
+      id="mobile-menu"
+      class="fixed top-0 right-[-100%] h-screen w-72 bg-slate-900 duration-500 z-50"
+    >
+      <div class="flex justify-end p-6">
+        <button id="close-btn">
+          <i class="fa-solid fa-xmark text-3xl"></i>
+        </button>
+      </div>
+
+      <ul class="space-y-8 text-center text-lg mt-10">
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!--================ HERO ================-->
+
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      <!-- Background Blur -->
+
+      <div class="blob one"></div>
+
+      <div class="blob two"></div>
+
+      <div class="blob three"></div>
+
+      <div
+        class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center px-8"
+      >
+        <!-- LEFT -->
+
+        <div>
+          <p class="uppercase tracking-[8px] text-cyan-400 mb-5">Welcome</p>
+
+          <h1 class="text-6xl lg:text-7xl font-extrabold leading-tight">
+            Hi,
+
+            <br />
+
+            I'm
+
+            <span class="gradient-text"> Niraj </span>
+          </h1>
+
+          <h2 class="mt-6 text-3xl font-semibold">
+            <span id="typing"></span>
+          </h2>
+
+          <p class="mt-8 text-slate-400 leading-8 max-w-xl">
+            Full Stack Software Developer at
+            <a
+              href="https://www.dynamic.net.np"
+              target="_blank"
+              class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
+            >
+              Dynamic Technosoft </a
+            >, specializing in React, Next.js, Node.js, Express.js, and MongoDB.
+            I build scalable web applications with clean architecture, modern
+            UI, and a focus on performance and user experience.
+          </p>
+
+          <div class="mt-10 flex gap-5 flex-wrap">
+            <a href="images/resume.pdf" class="primary-btn">
+              Download Resume
+            </a>
+
+            <a href="#contact" class="secondary-btn"> Contact Me </a>
+          </div>
+
+          <!-- Social -->
+
+          <div class="flex gap-6 mt-12 text-2xl">
+            <a href="https://github.com/NirajPandit320"
+              ><i class="fab fa-github"></i
+            ></a>
+
+            <a href="https://www.linkedin.com/in/nirajpandit"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+
+            <a href="https://www.facebook.com/neerajpandit782"
+              ><i class="fab fa-facebook"></i
+            ></a>
+
+            <a href="mailto:panditniraj320@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="relative flex justify-center items-end group">
+          <!-- Soft glow behind the image -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="h-72 w-72 lg:h-[420px] lg:w-[420px] rounded-full bg-cyan-600/10 blur-3xl transition-all duration-300 group-hover:bg-cyan-500/20 group-hover:scale-110"
+            ></div>
+          </div>
+
+          <!-- Profile Image -->
+          <img
+            src="images/profile1.png"
+            alt="Niraj Kumar Pandit"
+            class="relative z-10 h-[420px] md:h-[480px] lg:h-[520px] object-contain rounded-[2rem] transition-all duration-500 ease-out group-hover:scale-110 drop-shadow-[0_25px_50px_rgba(0,0,0,0.45)]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <!--================ ABOUT =================-->
+
+    <section id="about" class="py-28 px-6">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+        <!-- Left -->
+
+        <div class="relative flex justify-center items-end group">
+          <!-- Soft glow behind the image -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="h-72 w-72 lg:h-[420px] lg:w-[420px] rounded-full bg-cyan-600/10 blur-3xl transition-all duration-300 group-hover:bg-cyan-500/20 group-hover:scale-110"
+            ></div>
+          </div>
+
+          <!-- Profile Image -->
+          <img
+            src="images/profile3.jpeg"
+            alt="Niraj Kumar Pandit"
+            class="relative z-10 h-[420px] md:h-[480px] lg:h-[520px] object-contain rounded-[2rem] transition-all duration-500 ease-out group-hover:scale-110 drop-shadow-[0_25px_50px_rgba(0,0,0,0.45)]"
+          />
+        </div>
+
+        <!-- Right -->
+
+        <div>
+          <p class="section-title">ABOUT ME</p>
+
+          <h2 class="text-5xl font-bold mt-4">
+            Building Digital Products
+            <br />
+
+            That Matter.
+          </h2>
+
+          <p class="text-slate-400 mt-8 leading-8">
+            I'm a Full Stack Software Developer at
+            <a
+              href="https://www.dynamic.net.np"
+              target="_blank"
+              class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
+            >
+              Dynamic Technosoft </a
+            >, where I build modern, scalable web applications and contribute
+            across both frontend and backend development. I graduated with a
+            Bachelor of Computer Applications (BCA) from DIT University and
+            specialize in React, Next.js, Node.js, Express.js, MongoDB, and
+            modern JavaScript technologies. I enjoy designing clean user
+            interfaces, developing robust APIs, and building high-performance
+            applications that deliver excellent user experiences. I'm always
+            exploring new technologies and continuously improving my skills to
+            create impactful digital solutions.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
+            <!-- Current Role -->
+            <div
+              class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/60 hover:shadow-[0_15px_40px_rgba(34,211,238,0.15)]"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-blue-500/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              ></div>
+
+              <div class="relative flex items-center gap-4">
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-400 text-xl"
+                >
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+
+                <div>
+                  <h3 class="text-sm uppercase tracking-widest text-slate-400">
+                    Current Role
+                  </h3>
+                  <p class="mt-1 font-semibold text-white">
+                    Full Stack Software Developer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Company -->
+            <div
+              class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/60 hover:shadow-[0_15px_40px_rgba(34,211,238,0.15)]"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-blue-500/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              ></div>
+
+              <div class="relative flex items-center gap-4">
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-400 text-xl"
+                >
+                  <i class="fa-solid fa-building"></i>
+                </div>
+
+                <div>
+                  <h3 class="text-sm uppercase tracking-widest text-slate-400">
+                    Company
+                  </h3>
+                  <p class="mt-1 font-semibold text-white">
+                    <a
+                      href="https://www.dynamic.net.np"
+                      target="_blank"
+                      class="hover:text-cyan-300 transition-colors duration-300"
+                    >
+                      Dynamic Technosoft
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div
+              class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/60 hover:shadow-[0_15px_40px_rgba(34,211,238,0.15)]"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-blue-500/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              ></div>
+
+              <div class="relative flex items-center gap-4">
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-400 text-xl"
+                >
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div>
+                  <h3 class="text-sm uppercase tracking-widest text-slate-400">
+                    Education
+                  </h3>
+                  <p class="mt-1 font-semibold text-white">BCA Graduate</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div
+              class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/60 hover:shadow-[0_15px_40px_rgba(34,211,238,0.15)]"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-blue-500/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              ></div>
+
+              <div class="relative flex items-center gap-4">
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-400 text-xl"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+                  <h3 class="text-sm uppercase tracking-widest text-slate-400">
+                    Location
+                  </h3>
+                  <p class="mt-1 font-semibold text-white">Nepal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ STATS =================-->
+
+    <section class="py-16 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Projects -->
+          <div
+            class="group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/60 p-8 text-center transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400"
+          >
+            <div
+              class="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-cyan-400 to-blue-500"
+            ></div>
+
+            <div
+              class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-cyan-500/10 text-cyan-400 text-2xl group-hover:scale-110 transition"
+            >
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+
+            <h2 class="text-5xl font-extrabold text-white">10+</h2>
+
+            <p class="mt-3 text-slate-400 tracking-wide">Projects Completed</p>
+          </div>
+
+          <!-- Technologies -->
+          <div
+            class="group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/60 p-8 text-center transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400"
+          >
+            <div
+              class="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-cyan-400 to-blue-500"
+            ></div>
+
+            <div
+              class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-cyan-500/10 text-cyan-400 text-2xl group-hover:scale-110 transition"
+            >
+              <i class="fa-solid fa-code"></i>
+            </div>
+
+            <h2 class="text-5xl font-extrabold text-white">15+</h2>
+
+            <p class="mt-3 text-slate-400 tracking-wide">Technologies</p>
+          </div>
+
+          <!-- Experience -->
+          <div
+            class="group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/60 p-8 text-center transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400"
+          >
+            <div
+              class="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-cyan-400 to-blue-500"
+            ></div>
+
+            <div
+              class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-cyan-500/10 text-cyan-400 text-2xl group-hover:scale-110 transition"
+            >
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+
+            <h2 class="text-5xl font-extrabold text-white">3</h2>
+
+            <p class="mt-3 text-slate-400 tracking-wide">Months Experience</p>
+          </div>
+
+          <!-- Dedication -->
+          <div
+            class="group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/60 p-8 text-center transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400"
+          >
+            <div
+              class="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-cyan-400 to-blue-500"
+            ></div>
+
+            <div
+              class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-cyan-500/10 text-cyan-400 text-2xl group-hover:scale-110 transition"
+            >
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+
+            <h2 class="text-5xl font-extrabold text-white">100%</h2>
+
+            <p class="mt-3 text-slate-400 tracking-wide">Dedication</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ SKILLS =================-->
+
+    <section id="skills" class="py-32 px-6">
+      <div class="max-w-7xl mx-auto">
+        <!-- Heading -->
+
+        <div class="text-center mb-20">
+          <p class="section-title">MY EXPERTISE</p>
+
+          <h2 class="text-5xl font-bold mt-4">
+            Skills &
+            <span class="gradient-text"> Technologies </span>
+          </h2>
+
+          <p class="mt-7 text-slate-400 max-w-3xl mx-auto leading-8">
+            I enjoy building complete digital experiences—from crafting
+            responsive interfaces to developing scalable backend systems and
+            deploying production-ready applications.
+          </p>
+        </div>
+
+        <!-- Cards -->
+
+        <div class="grid lg:grid-cols-3 gap-8">
+          <!-- FRONTEND -->
+
+          <div
+            class="group rounded-[30px] border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:border-cyan-400"
+          >
+            <div class="p-8">
+              <h3 class="text-3xl font-bold">Frontend</h3>
+
+              <p class="mt-3 text-slate-400 leading-7">
+                Building responsive and interactive user interfaces with modern
+                JavaScript frameworks.
+              </p>
+            </div>
+
+            <div class="border-t border-white/10"></div>
+
+            <div class="p-8 grid grid-cols-2 gap-4">
+              <!-- Skills  -->
+
+              <!-- React -->
+              <div class="tech-tile react group">
+                <iconify-icon icon="logos:react" class="tech-icon">
+                </iconify-icon>
+
+                <h4>React</h4>
+              </div>
+
+              <!-- Next -->
+
+              <div class="tech-tile next">
+                <iconify-icon icon="logos:nextjs-icon" class="tech-icon">
+                </iconify-icon>
+
+                <h4>Next.js</h4>
+              </div>
+
+              <!-- Tailwind -->
+
+              <div class="tech-tile tailwind">
+                <iconify-icon icon="logos:tailwindcss-icon" class="tech-icon">
+                </iconify-icon>
+
+                <h4>Tailwind</h4>
+              </div>
+
+              <!-- JavaScript -->
+
+              <div class="tech-tile js">
+                <iconify-icon icon="logos:javascript" class="tech-icon">
+                </iconify-icon>
+
+                <h4>JavaScript</h4>
+              </div>
+
+              <!-- HTML -->
+
+              <div class="tech-tile html">
+                <iconify-icon icon="logos:html-5" class="tech-icon">
+                </iconify-icon>
+
+                <h4>HTML5</h4>
+              </div>
+
+              <!-- CSS -->
+
+              <div class="tech-tile css">
+                <iconify-icon icon="logos:css-3" class="tech-icon">
+                </iconify-icon>
+
+                <h4>CSS3</h4>
+              </div>
+            </div>
+
+            <div class="border-t border-white/10 px-8 py-6">
+              <p class="text-cyan-400 text-sm">Modern UI Development</p>
+            </div>
+          </div>
+
+          <!-- BACKEND -->
+
+          <div
+            class="group rounded-[30px] border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:border-cyan-400"
+          >
+            <div class="p-8">
+              <h3 class="text-3xl font-bold">Backend</h3>
+
+              <p class="mt-3 text-slate-400 leading-7">
+                Creating scalable APIs, databases and backend architecture.
+              </p>
+            </div>
+
+            <div class="border-t border-white/10"></div>
+
+            <div class="p-8">
+              <div class="grid grid-cols-2 gap-4">
+                <!-- Node.js -->
+                <div class="tech-card node">
+                  <iconify-icon icon="logos:nodejs-icon" class="tech-icon">
+                  </iconify-icon>
+
+                  <h4>Node.js</h4>
+                </div>
+
+                <!-- Express.js -->
+                <div class="tech-card express">
+                  <iconify-icon
+                    icon="simple-icons:express"
+                    class="tech-icon text-white"
+                  >
+                  </iconify-icon>
+
+                  <h4>Express.js</h4>
+                </div>
+
+                <!-- MongoDB -->
+                <div class="tech-card mongo">
+                  <iconify-icon icon="logos:mongodb-icon" class="tech-icon">
+                  </iconify-icon>
+
+                  <h4>MongoDB</h4>
+                </div>
+
+                <!-- Firebase -->
+                <div class="tech-card firebase">
+                  <iconify-icon icon="logos:firebase" class="tech-icon">
+                  </iconify-icon>
+
+                  <h4>Firebase</h4>
+                </div>
+
+                <!-- MySQL -->
+                <div class="tech-card mysql">
+                  <iconify-icon icon="logos:mysql" class="tech-icon">
+                  </iconify-icon>
+
+                  <h4>MySQL</h4>
+                </div>
+
+                <!-- .NET -->
+                <div class="tech-card dotnet">
+                  <iconify-icon icon="logos:dotnet" class="tech-icon">
+                  </iconify-icon>
+
+                  <h4>.NET</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-t border-white/10 px-8 py-6">
+              <p class="text-cyan-400 text-sm">API & Database Development</p>
+            </div>
+          </div>
+
+          <!-- TOOLS -->
+
+          <div
+            class="group rounded-[30px] border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:border-cyan-400"
+          >
+            <div class="p-8">
+              <h3 class="text-3xl font-bold">Tools</h3>
+
+              <p class="mt-3 text-slate-400 leading-7">
+                Professional tools powering my development workflow.
+              </p>
+            </div>
+
+            <div class="border-t border-white/10"></div>
+
+            <div class="p-8">
+              <div class="grid grid-cols-2 gap-4">
+                <!-- Git -->
+                <div class="tech-card git">
+                  <iconify-icon icon="logos:git-icon" class="tech-icon">
+                  </iconify-icon>
+
+                  <h4>Git</h4>
+                </div>
+
+                <!-- GitHub -->
+                <div class="tech-card github">
+                  <iconify-icon icon="logos:git-icon" class="tech-icon">
+                  </iconify-icon>
+
+                  <h4>GitHub</h4>
+                </div>
+
+                <!-- VS Code -->
+                <div class="tech-card vscode">
+                  <iconify-icon
+                    icon="logos:visual-studio-code"
+                    class="tech-icon"
+                  >
+                  </iconify-icon>
+
+                  <h4>VS Code</h4>
+                </div>
+
+                <!-- Postman -->
+                <div class="tech-card postman">
+                  <iconify-icon icon="logos:postman-icon" class="tech-icon">
+                  </iconify-icon>
+
+                  <h4>Postman</h4>
+                </div>
+
+                <!-- Figma -->
+                <div class="tech-card figma">
+                  <iconify-icon icon="logos:figma" class="tech-icon">
+                  </iconify-icon>
+
+                  <h4>Figma</h4>
+                </div>
+
+                <!-- Vercel -->
+                <div class="tech-card vercel">
+                  <iconify-icon icon="logos:vercel-icon" class="tech-icon">
+                  </iconify-icon>
+
+                  <h4>Vercel</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-t border-white/10 px-8 py-6">
+              <p class="text-cyan-400 text-sm">Development Workflow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="py-32 px-6">
+      <div class="max-w-7xl mx-auto">
+        <!-- Heading -->
+
+        <div class="text-center mb-20">
+          <p class="section-title">MY JOURNEY</p>
+
+          <h2 class="text-5xl font-bold mt-4">
+            Professional
+            <span class="gradient-text"> Experience </span>
+          </h2>
+
+          <p class="text-slate-400 mt-7 max-w-3xl mx-auto leading-8">
+            My professional journey as a software developer, building scalable
+            web applications and continuously expanding my technical expertise.
+          </p>
+        </div>
+
+        <!-- Timeline -->
+
+        <div class="relative max-w-5xl mx-auto">
+          <!-- Vertical Line -->
+
+          <div
+            class="absolute left-5 top-0 bottom-0 w-[2px] bg-cyan-400/20"
+          ></div>
+
+          <!-- Experience Card -->
+
+          <div class="relative pl-20">
+            <!-- Timeline Dot -->
+
+            <div
+              class="absolute left-[10px] top-10 h-6 w-6 rounded-full bg-cyan-400 ring-8 ring-cyan-400/20"
+            ></div>
+
+            <!-- Card -->
+
+            <div
+              class="rounded-[30px] border border-white/10 bg-white/5 backdrop-blur-xl p-10 transition duration-500 hover:border-cyan-400"
+            >
+              <!-- Top -->
+
+              <div
+                class="flex flex-col lg:flex-row justify-between lg:items-center"
+              >
+                <div>
+                  <h3 class="text-3xl font-bold">
+                    Full Stack Software Developer
+                  </h3>
+
+                  <p class="mt-3 text-cyan-400 font-semibold">
+                    Dynamic Technosoft
+                  </p>
+                </div>
+
+                <div class="mt-6 lg:mt-0">
+                  <span
+                    class="rounded-full bg-cyan-400/10 border border-cyan-400/20 px-5 py-2 text-cyan-300"
+                  >
+                    2026 – Present
+                  </span>
+                </div>
+              </div>
+
+              <!-- Description -->
+
+              <p class="mt-8 text-slate-400 leading-8">
+                Working as a Full Stack Software Developer, building responsive
+                frontend applications, scalable backend APIs, database-driven
+                systems, and delivering modern web solutions for clients.
+              </p>
+
+              <!-- Responsibilities -->
+
+              <div class="mt-10 grid md:grid-cols-2 gap-5">
+                <div class="flex gap-3">
+                  <i class="fa-solid fa-check text-cyan-400 mt-1"> </i>
+
+                  <p>Develop scalable React & Next.js applications</p>
+                </div>
+
+                <div class="flex gap-3">
+                  <i class="fa-solid fa-check text-cyan-400 mt-1"> </i>
+
+                  <p>Build RESTful APIs using Node.js & Express</p>
+                </div>
+
+                <div class="flex gap-3">
+                  <i class="fa-solid fa-check text-cyan-400 mt-1"> </i>
+
+                  <p>Design MongoDB & MySQL databases</p>
+                </div>
+
+                <div class="flex gap-3">
+                  <i class="fa-solid fa-check text-cyan-400 mt-1"> </i>
+
+                  <p>Collaborate in Agile development</p>
+                </div>
+              </div>
+
+              <!-- Tech Stack -->
+
+              <div class="flex flex-wrap gap-3 mt-10">
+                <span class="skill-pill"> React </span>
+
+                <span class="skill-pill"> Next.js </span>
+
+                <span class="skill-pill"> Node.js </span>
+
+                <span class="skill-pill"> Express.js </span>
+
+                <span class="skill-pill"> MongoDB </span>
+
+                <span class="skill-pill"> MySQL </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="py-32 px-6">
+      <div class="max-w-7xl mx-auto">
+        <!-- Heading -->
+
+        <div class="text-center mb-20">
+          <p class="section-title">FEATURED WORK</p>
+
+          <h2 class="text-5xl font-bold mt-4">
+            Selected
+            <span class="gradient-text"> Projects </span>
+          </h2>
+
+          <p class="mt-7 text-slate-400 max-w-3xl mx-auto leading-8">
+            A collection of projects demonstrating my expertise in full-stack
+            development, scalable architectures, responsive interfaces and
+            modern web technologies.
+          </p>
+        </div>
+
+        <!-- Featured Card -->
+
+        <div
+          class="group overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-500 hover:border-cyan-400"
+        >
+          <div class="grid lg:grid-cols-2">
+            <!-- LEFT -->
+
+            <div class="relative overflow-hidden">
+              <div
+                class="flex items-center justify-center mt-20 p-8 bg-slate-900/20"
+              >
+                <img
+                  src="images/project.png"
+                  alt="EduConnect"
+                  class="max-w-full max-h-[500px] object-contain transition duration-700 group-hover:scale-105"
+                />
+              </div>
+              <!-- Overlay -->
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent"
+              ></div>
+
+              <!-- Badge -->
+
+              <div class="absolute top-6 left-6">
+                <span
+                  class="rounded-full bg-cyan-500/15 border border-cyan-400/20 px-5 py-2 text-cyan-300"
+                >
+                  MERN Stack
+                </span>
+              </div>
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="p-10 lg:p-14">
+              <h3 class="text-4xl font-bold">EduConnect</h3>
+
+              <p class="text-cyan-400 mt-3 font-medium">
+                Student Collaboration Platform
+              </p>
+
+              <p class="mt-8 leading-8 text-slate-400">
+                EduConnect is a full-stack collaboration platform designed to
+                help students connect, communicate, share resources, manage
+                events, and collaborate through an intuitive and scalable web
+                application.
+              </p>
+
+              <!-- Features -->
+
+              <div class="grid md:grid-cols-2 gap-5 mt-10">
+                <div class="feature">
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  Authentication
+                </div>
+
+                <div class="feature">
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  Real-time Chat
+                </div>
+
+                <div class="feature">
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  Resource Sharing
+                </div>
+
+                <div class="feature">
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  Events Module
+                </div>
+
+                <div class="feature">
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  Role-Based Access
+                </div>
+
+                <div class="feature">
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  Responsive Design
+                </div>
+              </div>
+
+              <!-- Tech -->
+
+              <div class="flex flex-wrap gap-3 mt-10">
+                <span class="skill-pill"> React </span>
+
+                <span class="skill-pill"> Node.js </span>
+
+                <span class="skill-pill"> Express.js </span>
+
+                <span class="skill-pill"> MongoDB </span>
+
+                <span class="skill-pill"> Firebase </span>
+
+                <span class="skill-pill"> Socket.IO </span>
+              </div>
+
+              <!-- Buttons -->
+
+              <div class="flex gap-5 mt-12">
+                <a
+                  href="https://github.com/NirajPandit320/EduConnect"
+                  class="primary-btn"
+                >
+                  <i class="fa-brands fa-github mr-2"></i>
+
+                  GitHub
+                </a>
+
+                <a
+                  href="https://edu-connector.netlify.app"
+                  class="secondary-btn"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-32 px-6">
+      <div class="max-w-6xl mx-auto">
+        <!-- Heading -->
+
+        <div class="text-center mb-20">
+          <p class="section-title">GET IN TOUCH</p>
+
+          <h2 class="text-5xl font-bold mt-4">
+            Let's Build Something
+            <span class="gradient-text">Amazing</span>
+          </h2>
+
+          <p class="mt-8 text-slate-400 max-w-3xl mx-auto leading-8">
+            I'm always interested in discussing new opportunities, exciting
+            projects, and innovative ideas. Feel free to reach out anytime.
+          </p>
+        </div>
+
+        <!-- Contact Cards -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Email -->
+
+          <a
+            href="mailto:panditniraj320@gmail.com"
+            class="group rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 transition duration-500 hover:-translate-y-2 hover:border-cyan-400"
+          >
+            <div class="text-5xl text-cyan-400 mb-6">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <h3 class="text-xl font-bold">Email</h3>
+
+            <p class="text-slate-400 mt-3">panditniraj320@gmail.com</p>
+          </a>
+
+          <!-- Phone -->
+
+          <a
+            href="tel:+9779824210864"
+            class="group rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 transition duration-500 hover:-translate-y-2 hover:border-cyan-400"
+          >
+            <div class="text-5xl text-cyan-400 mb-6">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <h3 class="text-xl font-bold">Phone</h3>
+
+            <p class="text-slate-400 mt-3">+977 9824210864</p>
+          </a>
+
+          <!-- LinkedIn -->
+
+          <a
+            href="https://linkedin.com/in/nirajpandit"
+            target="_blank"
+            class="group rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 transition duration-500 hover:-translate-y-2 hover:border-cyan-400"
+          >
+            <div class="text-5xl text-cyan-400 mb-6">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+            <h3 class="text-xl font-bold">LinkedIn</h3>
+
+            <p class="text-slate-400 mt-3">Connect with me</p>
+          </a>
+
+          <!-- GitHub -->
+
+          <a
+            href="https://github.com/NirajPandit320"
+            target="_blank"
+            class="group rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 transition duration-500 hover:-translate-y-2 hover:border-cyan-400"
+          >
+            <div class="text-5xl text-cyan-400 mb-6">
+              <i class="fa-brands fa-github"></i>
+            </div>
+
+            <h3 class="text-xl font-bold">GitHub</h3>
+
+            <p class="text-slate-400 mt-3">Explore my repositories</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="border-t border-white/10 py-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-5"
+        >
+          <h2 class="text-2xl font-bold">
+            Niraj<span class="text-cyan-400">.</span>
+          </h2>
+
+          <p class="text-slate-500 text-center">
+            © 2026 Niraj Kumar Pandit. All Rights Reserved.
+          </p>
+
+          <div class="flex gap-5 text-xl">
+            <a href="https://github.com/NirajPandit320" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/nirajpandit" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:panditniraj320@gmail.com" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
