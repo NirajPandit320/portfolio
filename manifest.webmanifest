@@ -1,0 +1,22 @@
+{
+  "name": "Niraj Kumar Pandit Portfolio",
+  "short_name": "Niraj",
+  "description": "Portfolio website for Niraj Kumar Pandit, Full Stack Software Developer from Nepal.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#030712",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["portfolio", "personal", "developer"],
+  "icons": [
+    {
+      "src": "/images/favicon.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

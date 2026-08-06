@@ -1,4 +1,3 @@
-https://nirajkumarpandit.com.np
 User-agent: *
 Allow: /
 
