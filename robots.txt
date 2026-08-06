@@ -1,0 +1,5 @@
+https://nirajkumarpandit.com.np
+User-agent: *
+Allow: /
+
+Sitemap: https://nirajkumarpandit.com.np/sitemap.xml
