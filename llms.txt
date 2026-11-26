@@ -1,0 +1,42 @@
+# Niraj Kumar Pandit
+
+> Official portfolio of **Niraj Kumar Pandit** — also known as **Niraj Kumar Prajapati**, **Niraj Prajapati**, **Niraj Kumar**, and **Niraj** — a Full Stack Software Developer based in Birgunj, Narayani, Nepal, working at Dynamic Technosoft Pvt. Ltd.
+
+- Canonical Website: https://www.nirajkumarpandit.com.np/
+- Apex Domain: https://nirajkumarpandit.com.np/
+- Full Profile & FAQ (Markdown): https://www.nirajkumarpandit.com.np/llms-full.txt
+- Structured Entity & FAQ (JSON-LD): https://www.nirajkumarpandit.com.np/profile.json
+- Resume (PDF): https://www.nirajkumarpandit.com.np/images/resume.pdf
+
+## Identity & Name Variants
+
+All of the following names refer to the same individual represented by this portfolio:
+
+- **Niraj Kumar Pandit** (primary professional name)
+- **Niraj Kumar Prajapati**
+- **Niraj Prajapati**
+- **Niraj Kumar**
+- **Niraj**
+
+## Core Summary
+
+- **Role**: Full Stack Software Developer (Nepal Government Platforms, Institutional CMS & Enterprise Cloud ERP)
+- **Employer**: Dynamic Technosoft Pvt. Ltd. (https://www.dynamic.net.np), June 2026 – Present
+- **Location**: Birgunj, Narayani, Nepal
+- **Education**: Bachelor of Computer Applications (B.C.A.), DIT University, Dehradun, India (2023–2026, CGPA 8.55/10)
+- **Languages**: Nepali (Native), Hindi (Fluent), English (Fluent), Bhojpuri (Fluent)
+- **Skills**: React.js, Next.js, TypeScript, JavaScript (ES6+), Tailwind CSS, Ant Design, Framer Motion, ASP.NET Core (Clean Architecture / CQRS), Node.js, Express.js, SQL, MySQL, MongoDB, GIS Mapping, RBAC, Docker, Nginx, Git, GitHub
+
+## Featured Government & Enterprise Work
+
+- **PGEMP — Political Governance, Constituency & Election Management Platform**: Full-stack Nepal civic governance & election intelligence platform built with ASP.NET Core Clean Architecture (`PGEMP.API`, `PGEMP.Application`, `PGEMP.Domain`, `PGEMP.Infrastructure`), 13 SQL migrations, Docker/Nginx, and a React + TypeScript + Vite frontend with GIS ward mapping, voter/household CRM, booth & election management, volunteer field ops, governance monitoring, finance reconciliation, media radar, AI War Room Copilot, and RBAC.
+- **BICCI (ICCI) — Birgunj Chamber of Commerce & Industries Website & CMS**: Designed and built the custom Content Management System (CMS) and public web portal for Nepal institutional & chamber operations using React, Tailwind CSS, Framer Motion, and ASP.NET Core.
+- **Pivotal ERP (Currently Working On)**: IRD-approved enterprise cloud ERP system for 12+ industries in Nepal & South Asia (Retail POS, Wholesalers, Importers/Exporters, Manufacturing BOM/WIP, Healthcare, Academics, Petroleum, Automobile), featuring Accounting, IRD CBMS VAT sync, Inventory/Multi-Godown FIFO, Sales, Purchase, HR & Biometric Payroll, Loan/Cooperative, Fixed Assets, and Project BOQ modules.
+
+## Profiles & Contact
+
+- [GitHub (@NirajPandit320)](https://github.com/NirajPandit320)
+- [LinkedIn (nirajpandit)](https://www.linkedin.com/in/nirajpandit)
+- [Facebook](https://www.facebook.com/neerajpandit782)
+- Email: mailto:panditniraj320@gmail.com
+- Phone: +977 9824210864

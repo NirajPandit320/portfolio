@@ -1,0 +1,210 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.nirajkumarpandit.com.np/#person",
+      "name": "Niraj Kumar Pandit",
+      "alternateName": [
+        "Niraj Kumar Prajapati",
+        "Niraj Prajapati",
+        "Niraj Kumar",
+        "Niraj",
+        "Niraj Pandit"
+      ],
+      "givenName": "Niraj",
+      "additionalName": "Kumar",
+      "familyName": "Pandit",
+      "jobTitle": "Full Stack Software Developer",
+      "description": "Niraj Kumar Pandit (also searched as Niraj Kumar Prajapati, Niraj Prajapati, Niraj Kumar, and Niraj) is a Full Stack Software Developer from Birgunj, Narayani, Nepal, working at Dynamic Technosoft Pvt. Ltd. He builds Nepal government civic platforms (PGEMP), institutional CMS portals (BICCI / ICCI), and enterprise cloud ERP systems (Pivotal ERP) using React, Next.js, TypeScript, Tailwind CSS, Node.js, ASP.NET Core, and SQL/MongoDB.",
+      "url": "https://www.nirajkumarpandit.com.np/",
+      "mainEntityOfPage": { "@id": "https://www.nirajkumarpandit.com.np/#profile" },
+      "image": "https://www.nirajkumarpandit.com.np/images/profile1.png",
+      "email": "mailto:panditniraj320@gmail.com",
+      "telephone": "+9779824210864",
+      "nationality": { "@type": "Country", "name": "Nepal" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Birgunj",
+        "addressRegion": "Narayani",
+        "addressCountry": "NP"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Birgunj, Narayani, Nepal"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "DIT University",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dehradun",
+          "addressCountry": "IN"
+        }
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Bachelor of Computer Applications (B.C.A.) — CGPA 8.55/10",
+        "credentialCategory": "degree",
+        "recognizedBy": {
+          "@type": "CollegeOrUniversity",
+          "name": "DIT University"
+        }
+      },
+      "worksFor": { "@id": "https://www.nirajkumarpandit.com.np/#organization" },
+      "knowsLanguage": ["Nepali", "Hindi", "English", "Bhojpuri"],
+      "sameAs": [
+        "https://github.com/NirajPandit320",
+        "https://www.linkedin.com/in/nirajpandit",
+        "https://www.facebook.com/neerajpandit782"
+      ],
+      "knowsAbout": [
+        "Full Stack Development",
+        "GovTech & Civic Platforms",
+        "Enterprise Cloud ERP",
+        "Clean Architecture",
+        "CQRS",
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "Ant Design",
+        "Framer Motion",
+        "Node.js",
+        "Express.js",
+        "ASP.NET Core",
+        "C#",
+        "MongoDB",
+        "MySQL",
+        "SQL",
+        "GIS Mapping",
+        "Role-Based Access Control",
+        "Docker",
+        "Nginx",
+        "Java",
+        "Python",
+        "RESTful APIs",
+        "Git",
+        "GitHub"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.nirajkumarpandit.com.np/#organization",
+      "name": "Dynamic Technosoft Pvt. Ltd.",
+      "url": "https://www.dynamic.net.np",
+      "sameAs": ["https://www.dynamic.net.np"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.nirajkumarpandit.com.np/#website",
+      "url": "https://www.nirajkumarpandit.com.np/",
+      "name": "Niraj Kumar Pandit Portfolio",
+      "alternateName": [
+        "Niraj Kumar Prajapati Portfolio",
+        "Niraj Prajapati Portfolio",
+        "Niraj Kumar Portfolio",
+        "Niraj Portfolio"
+      ],
+      "description": "Official portfolio website for Niraj Kumar Pandit, Full Stack Software Developer from Nepal.",
+      "publisher": { "@id": "https://www.nirajkumarpandit.com.np/#person" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://www.nirajkumarpandit.com.np/#profile",
+      "url": "https://www.nirajkumarpandit.com.np/",
+      "name": "Niraj Kumar Pandit | Full Stack Software Developer Portfolio",
+      "dateCreated": "2026-08-05",
+      "dateModified": "2026-11-25",
+      "isPartOf": { "@id": "https://www.nirajkumarpandit.com.np/#website" },
+      "about": { "@id": "https://www.nirajkumarpandit.com.np/#person" },
+      "mainEntity": { "@id": "https://www.nirajkumarpandit.com.np/#person" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.nirajkumarpandit.com.np/#pgemp-platform",
+      "name": "PGEMP — Political Governance, Constituency & Election Management Platform",
+      "alternateName": ["PGEMP-Platform", "Electora"],
+      "description": "Full-stack Nepal civic governance and constituency intelligence platform built with ASP.NET Core Clean Architecture (API, Application CQRS Commands/Queries, Domain, Infrastructure), 13 SQL migrations, Docker/Nginx, and a React + TypeScript + Vite modular frontend featuring GIS ward mapping, voter/household CRM, booth & election management, volunteer field ops, governance project monitoring, finance reconciliation, media sentiment radar, AI War Room Copilot, and RBAC.",
+      "image": "https://www.nirajkumarpandit.com.np/images/pgemp-dashboard.jpg",
+      "author": { "@id": "https://www.nirajkumarpandit.com.np/#person" },
+      "creator": { "@id": "https://www.nirajkumarpandit.com.np/#person" },
+      "applicationCategory": "GovernmentApplication",
+      "operatingSystem": "Web",
+      "keywords": ["ASP.NET Core", "Clean Architecture", "CQRS", "React", "TypeScript", "Vite", "SQL", "GIS", "Docker", "Nginx", "RBAC"]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://www.nirajkumarpandit.com.np/#bicci-portal",
+      "name": "BICCI — Birgunj Chamber of Commerce & Industries CMS & Portal",
+      "alternateName": ["BICCI CMS", "ICCI Website & CMS"],
+      "description": "Public website and custom Content Management System (CMS) for Birgunj Chamber of Commerce & Industries (BICCI / ICCI) built with React, Tailwind CSS, Framer Motion, and ASP.NET Core CMS services, supporting news coverage, executive member directories, acts & regulations, projects, events, gallery, membership workflows, and NNSW Certificate of Origin integration.",
+      "image": "https://www.nirajkumarpandit.com.np/images/bicci-portal.jpg",
+      "author": { "@id": "https://www.nirajkumarpandit.com.np/#person" },
+      "creator": { "@id": "https://www.nirajkumarpandit.com.np/#person" },
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "keywords": ["React", "Tailwind CSS", "Framer Motion", "ASP.NET Core", "CMS", "Nepal"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.nirajkumarpandit.com.np/#pivotal-erp",
+      "name": "Pivotal ERP",
+      "description": "IRD-approved enterprise cloud ERP system for 12+ industries in Nepal and South Asia (Retail POS, Wholesalers, Importers & Exporters, Automobile, Petroleum, Manufacturing BOM/WIP, Healthcare, Academics), covering Accounting & Finance, Inventory & Multi-Godown FIFO, Sales & Purchase, HR & Biometric Payroll, Loan & Cooperative, Fixed Assets, Project BOQ Management, and real-time IRD CBMS synchronization.",
+      "image": "https://www.nirajkumarpandit.com.np/images/pivotal-erp.jpg",
+      "author": { "@id": "https://www.nirajkumarpandit.com.np/#person" },
+      "creator": { "@id": "https://www.nirajkumarpandit.com.np/#person" },
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "keywords": ["React", "TypeScript", "ASP.NET Core", "ERP", "IRD CBMS", "Accounting", "Inventory", "HR Payroll"]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.nirajkumarpandit.com.np/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is Niraj Kumar Pandit (also searched as Niraj Kumar Prajapati, Niraj Prajapati, Niraj Kumar, or Niraj)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Niraj Kumar Pandit (also searched as Niraj Kumar Prajapati, Niraj Prajapati, Niraj Kumar, and Niraj) is a Full Stack Software Developer from Birgunj, Narayani, Nepal. He works at Dynamic Technosoft Pvt. Ltd. building Nepal government civic platforms, institutional CMS portals, and enterprise cloud ERP systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What government and enterprise projects has Niraj Kumar Pandit built?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As a Full Stack Developer, he has worked on Nepal government and institutional platforms including PGEMP (Political Governance, Constituency & Election Management Platform built with ASP.NET Core Clean Architecture, SQL migrations, Docker, Nginx, and React/TypeScript), the BICCI / ICCI public website and CMS, a Membership Management Platform, and Pivotal ERP (an IRD-approved cloud ERP for 12+ industries)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies does Niraj Kumar Pandit specialize in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "He specializes in React, Next.js, TypeScript, JavaScript (ES6+), Tailwind CSS, Ant Design, Framer Motion, ASP.NET Core (Clean Architecture / CQRS), Node.js, Express.js, SQL, MySQL, MongoDB, GIS mapping, RBAC, Docker, and Nginx."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Niraj Kumar Pandit's educational background?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Niraj graduated with a Bachelor of Computer Applications (B.C.A.) from DIT University, Dehradun, India (2023–2026) with a CGPA of 8.55/10, and is fluent in Nepali, Hindi, English, and Bhojpuri."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact or connect with Niraj Kumar Pandit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can reach Niraj via email at panditniraj320@gmail.com, by phone at +977 9824210864, or connect on LinkedIn (linkedin.com/in/nirajpandit) and GitHub (github.com/NirajPandit320)."
+          }
+        }
+      ]
+    }
+  ]
+}

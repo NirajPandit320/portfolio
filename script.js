@@ -1,22 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     // ======================
-    // LOADER
-    // ======================
-
-    const loader = document.getElementById("loader");
-
-    if (loader) {
-        window.addEventListener("load", () => {
-            loader.style.opacity = "0";
-            loader.style.transition = "0.6s";
-
-            window.setTimeout(() => {
-                loader.style.display = "none";
-            }, 600);
-        });
-    }
-
-    // ======================
     // MOBILE MENU
     // ======================
 
@@ -24,22 +7,43 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeBtn = document.getElementById("close-btn");
     const mobileMenu = document.getElementById("mobile-menu");
 
-    const setMenuOpen = (isOpen) => {
+    const setMenuOpen = (isOpen, restoreFocus = false) => {
         if (!menuBtn || !mobileMenu) {
             return;
         }
 
-        mobileMenu.style.right = isOpen ? "0" : "-100%";
-        mobileMenu.setAttribute("aria-hidden", String(!isOpen));
-        menuBtn.setAttribute("aria-expanded", String(isOpen));
+        if (isOpen) {
+            mobileMenu.hidden = false;
+            mobileMenu.removeAttribute("inert");
+            void mobileMenu.offsetWidth;
+            mobileMenu.classList.add("menu-open");
+            menuBtn.setAttribute("aria-expanded", "true");
+            if (closeBtn) {
+                closeBtn.focus();
+            }
+        } else {
+            mobileMenu.classList.remove("menu-open");
+            mobileMenu.setAttribute("inert", "");
+            menuBtn.setAttribute("aria-expanded", "false");
+            window.setTimeout(() => {
+                if (!mobileMenu.classList.contains("menu-open")) {
+                    mobileMenu.hidden = true;
+                }
+            }, 300);
+            if (restoreFocus) {
+                menuBtn.focus();
+            }
+        }
     };
 
     if (menuBtn && mobileMenu) {
+        mobileMenu.hidden = true;
+        mobileMenu.setAttribute("inert", "");
         menuBtn.addEventListener("click", () => setMenuOpen(true));
     }
 
     if (closeBtn && mobileMenu) {
-        closeBtn.addEventListener("click", () => setMenuOpen(false));
+        closeBtn.addEventListener("click", () => setMenuOpen(false, true));
     }
 
     if (mobileMenu) {
@@ -49,8 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-            setMenuOpen(false);
+        if (event.key === "Escape" && mobileMenu && !mobileMenu.hidden) {
+            setMenuOpen(false, true);
         }
     });
 
@@ -60,80 +64,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const roles = [
         "Full Stack Software Developer",
-        "React Developer",
-        "Next.js Developer",
-        "MERN Stack Developer",
+        "React & TypeScript Developer",
+        "ASP.NET Core & Next.js Engineer",
+        "GovTech & Enterprise Systems Builder",
     ];
 
     const typing = document.getElementById("typing");
+    const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+    ).matches;
 
-    if (typing) {
-        const prefersReducedMotion = window.matchMedia(
-            "(prefers-reduced-motion: reduce)"
-        ).matches;
+    if (typing && !prefersReducedMotion) {
+        let roleIndex = 0;
+        let charIndex = roles[0].length;
+        let deleting = true;
 
-        if (prefersReducedMotion) {
-            typing.textContent = roles[0];
-        } else {
-            let roleIndex = 0;
-            let charIndex = 0;
-            let deleting = false;
+        const tick = () => {
+            const current = roles[roleIndex];
 
-            const type = () => {
-                const current = roles[roleIndex];
+            if (!deleting) {
+                charIndex += 1;
+                typing.textContent = current.substring(0, charIndex);
 
-                if (!deleting) {
-                    typing.textContent = current.substring(0, charIndex + 1);
-                    charIndex += 1;
-
-                    if (charIndex >= current.length) {
-                        deleting = true;
-
-                        window.setTimeout(type, 1200);
-                        return;
-                    }
-                } else {
-                    typing.textContent = current.substring(0, charIndex - 1);
-                    charIndex -= 1;
-
-                    if (charIndex <= 0) {
-                        deleting = false;
-                        roleIndex = (roleIndex + 1) % roles.length;
-                    }
+                if (charIndex >= current.length) {
+                    deleting = true;
+                    window.setTimeout(tick, 1800);
+                    return;
                 }
+            } else {
+                charIndex -= 1;
+                typing.textContent = current.substring(0, charIndex);
 
-                window.setTimeout(type, deleting ? 45 : 90);
-            };
-
-            type();
-        }
-    }
-
-    // ======================
-    // SCROLL REVEAL
-    // ======================
-
-    const reveals = document.querySelectorAll(".reveal");
-
-    if ("IntersectionObserver" in window) {
-        const revealObserver = new IntersectionObserver(
-            (entries, observer) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("active");
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            {
-                threshold: 0.15,
-                rootMargin: "0px 0px -10% 0px",
+                if (charIndex <= 0) {
+                    deleting = false;
+                    roleIndex = (roleIndex + 1) % roles.length;
+                }
             }
-        );
 
-        reveals.forEach((section) => revealObserver.observe(section));
-    } else {
-        reveals.forEach((section) => section.classList.add("active"));
+            window.setTimeout(tick, deleting ? 40 : 80);
+        };
+
+        window.setTimeout(tick, 2200);
     }
 
     // ======================
@@ -141,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ======================
 
     const navLinks = Array.from(document.querySelectorAll(".nav-link"));
-    const navSections = ["home", "about", "skills", "projects", "contact"]
+    const navSections = ["home", "about", "skills", "experience", "projects", "contact"]
         .map((id) => document.getElementById(id))
         .filter(Boolean);
     const navLinksByHash = new Map(
@@ -150,52 +121,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const setActiveNav = (sectionId) => {
         navLinks.forEach((link) => link.classList.remove("active"));
-
         const activeLink = navLinksByHash.get(`#${sectionId}`);
-
         if (activeLink) {
             activeLink.classList.add("active");
         }
     };
 
-    if (navSections.length > 0) {
-        if ("IntersectionObserver" in window) {
-            const navObserver = new IntersectionObserver(
-                (entries) => {
-                    const visibleEntries = entries
-                        .filter((entry) => entry.isIntersecting)
-                        .sort((left, right) => right.intersectionRatio - left.intersectionRatio);
+    if (navSections.length > 0 && "IntersectionObserver" in window) {
+        const navObserver = new IntersectionObserver(
+            (entries) => {
+                const visibleEntries = entries
+                    .filter((entry) => entry.isIntersecting)
+                    .sort((left, right) => right.intersectionRatio - left.intersectionRatio);
 
-                    if (visibleEntries.length > 0) {
-                        setActiveNav(visibleEntries[0].target.id);
-                    }
-                },
-                {
-                    threshold: [0.25, 0.5, 0.75],
-                    rootMargin: "-25% 0px -55% 0px",
+                if (visibleEntries.length > 0) {
+                    setActiveNav(visibleEntries[0].target.id);
                 }
-            );
+            },
+            {
+                threshold: [0.2, 0.5],
+                rootMargin: "-20% 0px -55% 0px",
+            }
+        );
 
-            navSections.forEach((section) => navObserver.observe(section));
-            setActiveNav("home");
-        } else {
-            const updateActiveNav = () => {
-                let current = "home";
-
-                navSections.forEach((section) => {
-                    const sectionTop = section.offsetTop - 150;
-
-                    if (window.scrollY >= sectionTop) {
-                        current = section.getAttribute("id") || current;
-                    }
-                });
-
-                setActiveNav(current);
-            };
-
-            window.addEventListener("scroll", updateActiveNav, { passive: true });
-            updateActiveNav();
-        }
+        navSections.forEach((section) => navObserver.observe(section));
+        setActiveNav("home");
     }
 
     // ======================
@@ -210,6 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             back.classList.toggle("opacity-0", !visible);
             back.classList.toggle("invisible", !visible);
+            back.classList.toggle("pointer-events-none", !visible);
             back.classList.toggle("opacity-100", visible);
             back.classList.toggle("visible", visible);
         };
@@ -220,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
         back.addEventListener("click", () => {
             window.scrollTo({
                 top: 0,
-                behavior: "smooth",
+                behavior: prefersReducedMotion ? "auto" : "smooth",
             });
         });
     }

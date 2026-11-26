@@ -1,7 +1,7 @@
 {
   "name": "Niraj Kumar Pandit Portfolio",
   "short_name": "Niraj",
-  "description": "Portfolio website for Niraj Kumar Pandit, Full Stack Software Developer from Nepal.",
+  "description": "Portfolio website for Niraj Kumar Pandit, Full Stack Software Developer from Birgunj, Nepal.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -14,7 +14,13 @@
   "icons": [
     {
       "src": "/images/favicon.png",
-      "sizes": "1254x1254",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     }
